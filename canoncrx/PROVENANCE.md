@@ -18,6 +18,8 @@ Concretely:
   which is how it already ships (the vc1/vp6 precedent). That separation is what keeps the license
   boundary clean and unambiguous: the module is separately built and independently replaceable.
 * Any bug fix or change to `crx_decode.cpp` remains CDDL and stays published here.
+* The Source Code form is public at https://github.com/sigurdle/libraw-codecs, synced by
+  `tools/publish-libraw-codecs.mjs`; the application's About box links it.
 
 This is the same route as `plugins/vp6`, which is a port of FFmpeg's LGPL VP6 decoder.
 
