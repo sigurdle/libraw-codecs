@@ -15,6 +15,7 @@ not covered by this license.
 |-----------|---------|---------------|
 | `canoncrx/` | Canon CR3 `crx`, lossless RAW and lossy C-RAW | `src/decoders/crx.cpp` (LibRaw 0.21.4) |
 | `fujicompressed/` | Fujifilm compressed RAF, lossless and lossy, Bayer and X-Trans | `src/decoders/fuji_compressed.cpp` (LibRaw 0.21.4) |
+| `olympusorf/` | Olympus / OM System ORF | `olympus_load_raw` + `getbithuff` in `src/decoders/decoders_dcraw.cpp` (LibRaw 0.21.4) |
 
 Each directory holds the ported C/C++, the `build.sh` that produced the shipped binary, a
 `PROVENANCE.md` stating exactly what was changed from upstream, and the CDDL text. The
@@ -28,6 +29,7 @@ Each `build.sh` compiles its sources to a standalone `.wasm` module with
 ```sh
 cd canoncrx && ./build.sh        # -> crx_decode.{wasm,mjs}
 cd fujicompressed && ./build.sh  # -> fuji_decode.{wasm,mjs}
+cd olympusorf && ./build.sh      # -> orf_decode.{wasm,mjs}
 ```
 
 These are the scripts used to build the shipped binaries, unedited, so each also emits a second
