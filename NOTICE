@@ -1,0 +1,22 @@
+libraw-codecs — camera-raw decoders ported from LibRaw
+=====================================================
+
+The C/C++ sources in this repository are ports of decoders from LibRaw
+(https://github.com/LibRaw/LibRaw). LibRaw is licensed under the GNU LGPL 2.1 or
+the CDDL 1.0, at the recipient's option. These ports are distributed under the
+Common Development and Distribution License, version 1.0 (see LICENSE).
+
+They are compiled to WebAssembly and loaded at runtime by a separate application,
+which combines them into a Larger Work (CDDL-1.0 section 3.6). That application is
+not part of this repository and is not covered by this license; this repository
+provides the Source Code form required by CDDL-1.0 section 3.1.
+
+Decoder → upstream LibRaw source and copyright
+----------------------------------------------
+  canoncrx/  Canon CR3 crx   src/decoders/crx.cpp (LibRaw 0.21.4)
+                             Copyright (C) 2018-2019 Alexey Danilchenko
+                             Copyright (C) 2019 Alex Tutubalin, LibRaw LLC
+                             Modifications Copyright (C) 2026 Sigurd Lerstad
+
+Each source file keeps its upstream copyright and license notices, and each
+directory's PROVENANCE.md lists what was changed from upstream.
