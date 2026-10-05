@@ -3,3 +3,6 @@
 *.mjs
 *.o
 *.js
+
+# ...but the Sony ports ARE source: JavaScript, with no binary built from them.
+!sonysr2/*.js

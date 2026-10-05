@@ -16,6 +16,7 @@ not covered by this license.
 | `canoncrx/` | Canon CR3 `crx`, lossless RAW and lossy C-RAW | `src/decoders/crx.cpp` (LibRaw 0.21.4) |
 | `fujicompressed/` | Fujifilm compressed RAF, lossless and lossy, Bayer and X-Trans | `src/decoders/fuji_compressed.cpp` (LibRaw 0.21.4) |
 | `olympusorf/` | Olympus / OM System ORF | `olympus_load_raw` + `getbithuff` in `src/decoders/decoders_dcraw.cpp` (LibRaw 0.21.4) |
+| `sonysr2/` | Sony ARW metadata: SR2Private decryption and the ARW2 tone curve (JavaScript, nothing to build) | `sony_decrypt` in `src/metadata/sony.cpp`; the 0x7010 curve in `src/metadata/tiff.cpp` (LibRaw 0.21.4) |
 
 Each directory holds the ported C/C++, the `build.sh` that produced the shipped binary, a
 `PROVENANCE.md` stating exactly what was changed from upstream, and the CDDL text. The

@@ -21,6 +21,11 @@ Decoder → upstream LibRaw source and copyright
                    compressed Copyright (C) 2016-2019 Alexey Danilchenko
                    RAF       Adopted to LibRaw by Alex Tutubalin, LibRaw LLC
                              Modifications Copyright (C) 2026 Sigurd Lerstad
+  sonysr2/     Sony ARW      sony_decrypt in src/metadata/sony.cpp; the 0x7010 tone curve in
+               metadata      src/metadata/tiff.cpp (LibRaw 0.21.4)
+                             Copyright 2019-2021 LibRaw LLC; uses code from dcraw.c,
+                             Copyright 1997-2018 Dave Coffin (not dcraw's RESTRICTED code)
+                             Modifications Copyright (C) 2026 Sigurd Lerstad
   olympusorf/  Olympus ORF   olympus_load_raw, getbithuff in src/decoders/decoders_dcraw.cpp
                              (LibRaw 0.21.4)
                              Copyright 2019-2021 LibRaw LLC; uses code from dcraw.c,
